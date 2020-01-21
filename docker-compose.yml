@@ -8,6 +8,7 @@ services:
     volumes:
       - ./resource/tesseract:/opt/tesseract/
       - ./resource/langdata:/tmp/langdata/
+      - ./tmp:/tmp/tesstrain
     tty: true
     environment:
       TZ: "Asia/Tokyo"
